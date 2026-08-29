@@ -1,6 +1,5 @@
 #key	value
 name	AwakenToLife.org
-owned-by	Vidya Shankar Chakravarthy
 byline	Constant Conscious Education
 
 safeName	awakentolife
@@ -16,14 +15,11 @@ fonts	cursive=Eagle+Lake&menu=Quintessential&menu-size=1.5rem&menu-height=44px
 sections	services, family-building, books, resources
 scaffold	quotes
 
-phone	+91-99446-13064
-whatsapp	919944613064
-phone2	+91-94446-06456
-whatsapp2	919444606456
+phone	+91-94446-06456
+whatsapp	919444606456
 email	vidya@awakentolife.org
 
-local-url	http://localhost/for/vidya/awakentolife/
+local-url	http://localhost/awakentolife/www/
 live-url	https://awakentolife.org/
-showIn	organizations
+dawn-menu	no
 year	2021
-network	no

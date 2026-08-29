@@ -1,20 +1,11 @@
 <?php
+if (disk_file_exists($ntk = __DIR__ . '/../awakentolife/network.php'))
+	disk_include_once($ntk);
+
 variables([
-	//'link-to-section-home' => true,
-	'social' => [
-		[ 'type' => 'facebook', 'url' => 'https://www.facebook.com/vidyashankarchennai', 'name' => 'Vidya FB' ],
-		[ 'type' => 'instagram', 'url' => 'https://www.instagram.com/vidyashankarchennai/', 'name' => 'Vidya IG' ],
-		[ 'type' => 'linkedin', 'url' => 'https://www.linkedin.com/in/vidya-shankar-1453ab49/', 'name' => 'Vidya LI' ],
-		[ 'type' => 'youtube', 'url' => 'https://www.youtube.com/@awaken-to-life', 'name' => 'ATL YT' ],
-	],
-	//'footer-variation' => 'single-widget',
-	'no-seo-info' => !variable('local'),
-	'no-search' => true,
-	'no-network-in-footer' => true,
 	'link-to-node-home' => nodeIs('news-online'),
-	'wants-sentencecase-for-headings' => true,
 ]);
-setup_cdn('vidya/awakentolife/');
+//setup_cdn();
 
 function site_before_render() {
 	runFeature('engage'); //needed for floating button
